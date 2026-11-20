@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Flexculator</title>
+  <meta name="description" content="Privacy policy for the Flexculator Android app. Flexculator collects no data and works fully offline.">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    /* Colours taken from the app's CalcPalette (lib/theme/app_theme.dart). */
+    :root {
+      color-scheme: dark light;
+      --bg: #000000;          /* background */
+      --card: #1F1F21;        /* scientific key */
+      --key: #333333;         /* number key */
+      --text: #FFFFFF;        /* display text */
+      --muted: #8E8E93;       /* secondary text */
+      --accent: #FF9F0A;      /* default orange accent / operator key */
+      --on-accent: #000000;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F2F2F7;
+        --card: #FFFFFF;
+        --key: #E5E5EA;
+        --text: #000000;
+        --muted: #6C6C70;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 28px 16px 56px; }
+
+    /* Header styled like the calculator display: right-aligned, thin, large. */
+    header {
+      background: var(--card); border-radius: 28px; padding: 20px 24px 22px;
+      margin-bottom: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand img { width: 44px; height: 44px; border-radius: 12px; }
+    .brand span { font-size: 1.15rem; font-weight: 600; }
+    .display { text-align: right; margin-top: 18px; }
+    .display .history { color: var(--muted); font-size: 1.05rem; }
+    .display h1 {
+      margin: 0; font-size: clamp(2.2rem, 8vw, 3.6rem); font-weight: 300;
+      line-height: 1.1; letter-spacing: -0.5px;
+    }
+    .display .preview { color: var(--muted); font-size: 1.1rem; margin-top: 4px; }
+
+    /* Pill badges, shaped like the app's stadium keys. */
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; padding: 0; list-style: none; }
+    .pills li {
+      background: var(--key); border-radius: 999px; padding: 8px 16px;
+      font-size: 0.95rem; font-weight: 500;
+    }
+    .pills li.accent { background: var(--accent); color: var(--on-accent); }
+
+    section {
+      background: var(--card); border-radius: 24px; padding: 18px 22px;
+      margin-bottom: 12px;
+    }
+    h2 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+    h2::before {
+      content: ""; width: 10px; height: 10px; border-radius: 50%;
+      background: var(--accent); flex: none;
+    }
+    p { margin: 6px 0; }
+    ul { margin: 6px 0; padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--accent); }
+    .contact {
+      display: inline-block; margin-top: 8px; background: var(--accent); color: var(--on-accent);
+      border-radius: 999px; padding: 10px 20px; font-weight: 600; text-decoration: none;
+    }
+    footer { color: var(--muted); text-align: center; font-size: 0.9rem; margin-top: 24px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">
+      <img src="icon.png" alt="Flexculator app icon" width="44" height="44">
+      <span>Flexculator</span>
+    </div>
+    <div class="display">
+      <div class="history">Last updated: November 19, 2026</div>
+      <h1>Privacy Policy</h1>
+      <div class="preview">= 0 data collected</div>
+    </div>
+  </header>
+
+  <ul class="pills" aria-label="Summary">
+    <li class="accent">No data collected</li>
+    <li>Works offline</li>
+    <li>No ads</li>
+    <li>No tracking</li>
+    <li>No accounts</li>
+  </ul>
+
+  <section>
+    <h2>Overview</h2>
+    <p>Flexculator is a calculator, scientific calculator and unit converter with an optional private vault. We built it to work completely offline. This policy explains what information the app handles and how.</p>
+  </section>
+
+  <section>
+    <h2>Information we collect</h2>
+    <p>None. Flexculator does not collect, transmit, sell or share any personal information. The app has no accounts, no analytics, no advertising and no tracking, and it does not request the Internet permission, so nothing you do in the app can leave your device through it.</p>
+  </section>
+
+  <section>
+    <h2>Calculations and settings</h2>
+    <p>Calculations are performed on your device and are not stored. Your preferences (theme, accent colour, calculator mode) are saved locally on your device.</p>
+  </section>
+
+  <section>
+    <h2>Private vault</h2>
+    <p>Photos, videos, files and notes you add to the vault are copied into the app's private storage on your device. This storage is protected by the operating system: other apps, the gallery and file managers cannot access it, and the device encrypts it at rest. Your vault PIN and recovery answer are never stored as plain text; only a salted, one-way hash is kept on the device. We never receive any vault content, PIN or recovery answer, so we cannot recover them for you.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Photos and videos:</strong> used to show your photos inside the app so you can choose which ones to hide. The items you choose are copied into the vault and, after you confirm the system prompt, the originals are deleted from your gallery. The app does not read, analyse or upload any other photos. If you prefer not to grant this access, you can use the system photo picker instead; then only copies are made and the originals stay in your gallery.</li>
+      <li><strong>Files:</strong> used only when you choose files to add to the vault.</li>
+      <li><strong>Save to gallery:</strong> used only when you choose "Unhide" to move a vault item back to your gallery (on older Android versions this requires the storage permission).</li>
+    </ul>
+    <p>The app also blocks screenshots while the vault is open to protect its content.</p>
+  </section>
+
+  <section>
+    <h2>Backups and data deletion</h2>
+    <p>Vault content is excluded from cloud backups and stays only on your device. You can delete individual items or the whole vault at any time in the app. Uninstalling the app or clearing its data permanently deletes all vault content and settings, so keep your own copies of anything important.</p>
+  </section>
+
+  <section>
+    <h2>Sharing</h2>
+    <p>Content only leaves the vault when you explicitly choose "Share / Export" or "Unhide". Once shared, it is handled by the app or service you selected.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>Flexculator does not knowingly collect any information from anyone, including children under 13.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published in the app and on this page with a new "last updated" date.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy? Contact Flexculator Developer at m.kam2812005@gmail.com.</p>
+    <a class="contact" href="mailto:m.kam2812005@gmail.com">Email us</a>
+  </section>
+
+  <footer>© 2026 Flexculator</footer>
+</main>
+</body>
+</html>
